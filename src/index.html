@@ -15,10 +15,54 @@
   <body>
     <div class="container-fluid text-center">
       <h1 class="mt-5">Generate your domain name</h1>
-
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">Lu</a>
+      <form>
+        <div class="form-group row justify-content-center">
+          <div class="col-4">
+            <label for="pronounInput">Pronoun</label>
+            <input
+              type="text"
+              class="form-control"
+              id="pronounInput"
+              aria-describedby="pronounIn"
+              placeholder="Enter Pronoun Here"
+            />
+            <button class="btn btn-primary">Add to list</button>
+          </div>
+        </div>
+        <div class="form-group row justify-content-center">
+          <div class="col-4">
+            <label for="adjectiveInput">adjective</label>
+            <input
+              type="text"
+              class="form-control"
+              id="adjectiveInput"
+              aria-describedby="adjectiveIn"
+              placeholder="Enter adjective Here"
+            />
+            <button class="btn btn-primary">Add to list</button>
+          </div>
+        </div>
+        <div class="form-group row justify-content-center">
+          <div class="col-4">
+            <label for="nounInput">noun</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nounInput"
+              aria-describedby="nounIn"
+              placeholder="Enter noun Here"
+            />
+            <button class="btn btn-primary">Add to list</button>
+          </div>
+        </div>
+        <button class="btn btn-primary">
+          Generate All Possible Combinations
+        </button>
+      </form>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <ul class="list-group"></ul>
+        </div>
       </div>
     </div>
   </body>
