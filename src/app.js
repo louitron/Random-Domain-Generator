@@ -354,7 +354,7 @@ function generateCombinations() {
   combinationsList.innerHTML = "";
 
   // Loop 27 times to generate all possible combinations
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 5; i++) {
     // Generate 3 random indices for each array
     const index1 = Math.floor(Math.random() * pronoun.length);
     const index2 = Math.floor(Math.random() * adj.length);
