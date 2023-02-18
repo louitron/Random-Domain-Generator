@@ -314,9 +314,6 @@ const genRanDomain = () => {
       }
     }
   }
-  console.log(
-    "This exersice was boring and I wanted to expand on it, so I made a general domain generator"
-  );
 };
 
 //
