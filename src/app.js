@@ -2,7 +2,6 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 const pronoun = [
@@ -336,21 +335,17 @@ function generateCombinations() {
   // Clear the previous items
   combinationsList.innerHTML = "";
 
-  // Loop 27 times to generate all possible combinations
   for (let i = 0; i < 5; i++) {
-    // Generate 3 random indices for each array
     const pronounIndex = Math.floor(Math.random() * pronoun.length);
     const adjIndex = Math.floor(Math.random() * adj.length);
     const nounIndex = Math.floor(Math.random() * noun.length);
     const domainNameIndex = Math.floor(Math.random() * domainEnd.length);
 
-    // Retrieve the values at these indices
     const pronounValue = pronoun[pronounIndex];
     const adjValue = adj[adjIndex];
     const nounValue = noun[nounIndex];
     const domainValue = domainEnd[domainNameIndex];
 
-    // Create a new list item and add it to the list
     const listItem = document.createElement("li");
     listItem.classList.add("list-group-item");
     listItem.textContent = `${pronounValue}${adjValue}${nounValue}${domainValue}`;
@@ -371,8 +366,6 @@ function generateCombinations() {
 window.onload = function() {
   //write your code here
   genRanDomain();
-  // Add an event listener to the button to trigger the function on click
-  generateBtn.addEventListener("click", generateCombinations);
 
-  // addPossibilities(genRanDomain());
+  generateBtn.addEventListener("click", generateCombinations);
 };
