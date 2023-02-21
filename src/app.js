@@ -304,20 +304,6 @@ const domainEnd = [
   ".tech"
 ];
 
-// const genRanDomain = () => {
-//   console.log("Here is the domain generator exersice:");
-//   for (let i = 0; i < 2; i++) {
-//     for (let j = 0; j < 2; j++) {
-//       for (let k = 0; k < 2; k++) {
-//         const combination = `${pronoun[i]} ${adj[j]} ${noun[k]}`;
-//         console.log(combination);
-//       }
-//     }
-//   }
-// };
-
-//
-
 gsap.from("button", {
   duration: 1,
   opacity: 0,
@@ -361,7 +347,5 @@ function generateCombinations() {
 }
 
 window.onload = function() {
-  //write your code here
-
   generateBtn.addEventListener("click", generateCombinations);
 };
