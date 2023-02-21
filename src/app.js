@@ -344,8 +344,8 @@ function generateCombinations() {
     const domainValue = domainEnd[domainNameIndex];
 
     const listItem = document.createElement("li");
-    listItem.classList.add("list-group-item");
     listItem.textContent = `${pronounValue}${adjValue}${nounValue}${domainValue}`;
+    listItem.classList.add("list-group-item", "text-wrap");
     combinationsList.appendChild(listItem);
   }
   gsap.fromTo(
@@ -362,7 +362,6 @@ function generateCombinations() {
 
 window.onload = function() {
   //write your code here
-  genRanDomain();
 
   generateBtn.addEventListener("click", generateCombinations);
 };
