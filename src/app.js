@@ -24,7 +24,6 @@ const pronoun = [
   "Truly",
   "Who",
   "Something",
-  "Mine",
   "None",
   "All",
   "Its",
@@ -34,10 +33,14 @@ const pronoun = [
   "Towhom",
   "We",
   "My",
-  "Anyone"
+  "Any"
 ];
 const adj = [
   "Great",
+  "Inquisitive",
+  "Superb",
+  "Intricate",
+  "Superfluous",
   "Big",
   "Thirsty",
   "Courageous",
